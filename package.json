@@ -1,0 +1,25 @@
+{
+  "name": "javascript-getapi",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000J\u0000a\u0000v\u0000a\u0000s\u0000c\u0000r\u0000i\u0000p\u0000t\u0000-\u0000g\u0000e\u0000t\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000#\u0000 \u0000t\u0000e\u0000s\u0000t\u0000j\u0000a\u0000v\u0000a\u0000s\u0000c\u0000r\u0000i\u0000p\u0000t\u0000-\u0000g\u0000e\u0000t\u0000a\u0000p\u0000i\u0000 \u0000f\u0000o\u0000r\u0000m\u0000 \u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000f\u0000a\u0000k\u0000e\u0000s\u0000t\u0000o\u0000r\u0000e\u0000a\u0000p\u0000i\u0000.\u0000c\u0000o\u0000m\u0000/\u0000p\u0000r\u0000o\u0000d\u0000u\u0000c\u0000t\u0000s\u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://YOUR_USERNAME@github.com/Siwakorn-Phaitong-kim/Javascript-get-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Siwakorn-Phaitong-kim/Javascript-get-api/issues"
+  },
+  "homepage": "https://github.com/Siwakorn-Phaitong-kim/Javascript-get-api#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
