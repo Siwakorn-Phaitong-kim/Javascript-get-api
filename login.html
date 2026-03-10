@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+
+    <form action="" id="loginform">
+
+        <label for="">Username :</label>
+        <input type="text" name="" id="username" placeholder="Username"><br><br>
+        <label for="" >Password :</label>
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <button id="submit">Login</button>
+
+    </form>
+
+    <script>
+
+        document.getElementById("loginform").addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const inputuser = document.getElementById('username').value;
+            const inputpass = document.getElementById('password').value;
+            const username = "siwakorn";
+            const upassword = "siwakorn";
+
+            if(inputuser === username && inputpass === upassword) {
+                alert(`Login Success ยินดีต้อนรบคุณ : ${username}`)
+                window.location.href = "index.html";
+            }else {
+                alert("Can't Login")
+            }
+
+            
+        })
+
+    </script>
+</body>
+</html>

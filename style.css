@@ -38,3 +38,13 @@ h1 {
     height: 40px;
     overflow: hidden;
 }
+
+#loginform {
+    padding: 15px;
+    text-align: center;
+}
+
+#btn-out {
+    padding: 15px;
+    text-align: center;
+}
