@@ -12,22 +12,37 @@
 
 const express = require('express');
 const cors = require('cors');
-const app = express()
+const app = express();
 const port = 3000;
 
 app.use(cors());
 app.use(express.json());
 
 const myProd = [
-    {id: 1 , title: "กระเป๋าหนังสุดเท้ไม่เหมืนใคร", price: 1000, image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"},
-    {id: 2 , title: "เสื้อยืดสุดหรู้หราหมาเห่า", price: 200000, image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"},
+    {id: 1, title: "กระเป๋าหนัง" , price: 2000, image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"},
+    {id: 2, title: "เสื้อยืด", price: 3000, image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"}
 ]
 
-
-app.get('/product', (req, res) => {
+app.get("/products", (req, res) => {
     res.json(myProd);
 });
 
+app.post("/products", (req, res) => {
+    const newProd = {
+        id: myProd.length + 1,
+        title: req.body.title,
+        price: req.body.price,
+        image: req.body.image
+    }
+    
+    myProd.push(newProd);
+    res.status(201).json(newProd);
+
+})
+
+
 app.listen(port, ()=>{
-    console.log(`Server is running at http:/localhost:${port}`)
+    console.log(`Server is running at http://localhost:${port}`)
 });
+
+
