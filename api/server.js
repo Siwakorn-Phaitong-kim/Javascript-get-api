@@ -40,6 +40,18 @@ app.post("/products", (req, res) => {
 
 })
 
+//delete method
+app.delete("/products/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const index = myProd.findIndex(p => p.id === id);
+
+    if(index !== -1) {
+        myProd.splice(index, 1);
+        res.json({message: "delete success"});
+    }else {
+        res.status(404).json({message: "Product Not Found"});
+    }
+});
 
 app.listen(port, ()=>{
     console.log(`Server is running at http://localhost:${port}`)
